@@ -2,7 +2,7 @@ package ordercraft.project.model;
 
 public class User {
     private int userId;
-    private String username;
+    private String userName;
     private String userEmail;
     private String password;
     public User(){
@@ -10,7 +10,7 @@ public class User {
     }
     public User(int userId, String username, String userEmail, String password) {
         this.userId = userId;
-        this.username = username;
+        this.userName = username;
         this.userEmail = userEmail;
         this.password = password;
     }
@@ -24,11 +24,11 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.userName = username;
     }
 
     public String getUserEmail() {
@@ -51,7 +51,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "userId=" + userId +
-                ", username='" + username + '\'' +
+                ", username='" + userName + '\'' +
                 ", userEmail='" + userEmail + '\'' +
                 ", password='" + password + '\'' +
                 '}';
