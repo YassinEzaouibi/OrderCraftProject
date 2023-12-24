@@ -16,8 +16,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-<!-- Contact section -->
 <header>
     <div class="bg-indigo-900 max-w-full mx-auto px-4 sm:px-6">
         <div class="flex flex-row justify-between border-b border-indigo-400 border-opacity-25 py-6 md:justify-start md:space-x-10">
@@ -25,7 +23,7 @@
                 <h1 class="text-xl font-bold font-normal text-indigo-400">Orders Management System</h1>
             </div>
             <div class="end-3/3 space-x-10 pr-12">
-                <a href="<%=request.getContextPath()%>/" class="whitespace-nowrap text-base font-medium text-indigo-300 hover:text-white"> Clients </a>
+                <a href="<%=request.getContextPath()%>/" class="whitespace-nowrap text-base font-medium text-indigo-300 text-white"> Clients </a>
                 <a href="<%=request.getContextPath()%>/product" class="whitespace-nowrap text-base font-medium text-indigo-300 hover:text-white"> Products </a>
                 <a href="<%=request.getContextPath()%>/order" class="whitespace-nowrap text-base font-medium text-indigo-300 hover:text-white"> Orders </a>
             </div>
@@ -43,7 +41,7 @@
                 <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     <div>
                         <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Client</label>
-                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <select  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a country</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -62,33 +60,33 @@
                         </select>
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-warm-gray-900">Quantity</label>
+                        <label  class="block text-sm font-medium text-warm-gray-900">Quantity</label>
                         <div class="mt-1">
                             <input id="number" name="number" type="number" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">
                         </div>
                     </div>
                     <div class="sm:col-span-2">
-                        <label for="subject" class="block text-sm font-medium text-warm-gray-900">price</label>
+                        <label class="block text-sm font-medium text-warm-gray-900">price</label>
                         <div class="mt-1">
-                            <label for="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">price</label>
+                            <label  class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">price</label>
                         </div>
                     </div>
                     <div>
                         <div class="flex justify-between">
-                            <label for="phone" class="block text-sm font-medium text-warm-gray-900">Date</label>
+                            <label class="block text-sm font-medium text-warm-gray-900">Date</label>
                         </div>
                         <div class="mt-1">
                             <input type="datetime-local" name="Date" id="Date" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" aria-describedby="phone-optional">
                         </div>
                     </div>
                     <div class="sm:col-span-2">
-                        <label for="subject" class="block text-sm font-medium text-warm-gray-900">Status</label>
+                        <label class="block text-sm font-medium text-warm-gray-900">Status</label>
                         <div class="mt-1">
-                            <label for="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">pending</label>
+                            <label  class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">pending</label>
                         </div>
                     </div>
                     <div class="sm:col-span-2 sm:flex sm:justify-end">
-                        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-indigo-300 bg-indigo-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto">Submit</button>
+                        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-indigo-300 bg-indigo-900 hover:text-w focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto">Submit</button>
                     </div>
                 </form>
             </div>
@@ -96,6 +94,7 @@
     </div>
     </div>
 </section>
+
 
 </body>
 </html>
